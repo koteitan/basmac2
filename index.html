@@ -1,0 +1,58 @@
+<html><head><title>MVEBH: Multiple Variable Extended Buchholz Hydra in JavaScript</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style><!--
+  body{font-family:Segoe UI;font-size:12pt;background-color:#DFCCDD}
+  a{color:black;border-style:none;text-decoration:underline;}
+  a:link{color:#000055;border-style:none;text-decoration:underline}
+  a:visited{color:#0000CC;border-style:none;text-decoration:underline}
+  a:hover{color:#8888CC;border-color:none;text-decoration:underline}
+  address{text-align:right;font-style:normal;font-size:12pt}
+  textarea{font-family:"Consolas",monospace}
+  .myinput{border-style:solid;border-color:black;border-width:1px;color:black;font-family:ＭＳ ゴシック;font-size:10pt;padding:2px;white-space:nowrap;}
+  .example{border-style:none;border-color:black;border-width:1px;color:black;font-family:ＭＳ ゴシック;font-size:10pt;padding:10px}
+  .tdbutton{border-width:1px;border-style:solid;height:30px;width:30px}
+  hr{border-style:solid}
+  .console{font-family:MS Gothic;background-color:black}
+  h1{margin-top:1pt;margin-bottom:1pt;}
+  ul{margin-top:1pt;margin-bottom:1pt;}
+  dt{font-weight:bold;font-size:12pt}
+  li{font-size:12pt}
+  dd{font-size:12pt}
+  .noborder{border-style:none}
+  .vcenter{vertical-align:center}
+  .mybutton{width:200px}
+  --></style>
+<body>
+<h1><span style="color:blue">0</span><sup style="color:green">1<sup style="color:red">ω</sup></sup> MVEBH: Multiple Variable Extended Buchholz Hydra in JavaScript</h1>
+<p>
+<form id="form">
+input: <a style="font-size:12pt" id="link" href="" onclick='javascript:makelink();' onmouseover='javascript:makelink();'>link of this notation</a>
+<input type="checkbox" id="autosavecheck" value="autosave" onclick="javscript:autosave();" checked="">
+<br>
+<textarea style="width:100%" rows=10 id="in"></textarea><br>
+<input type=button value="expand the last" onclick="javascript:doexpandlast(false);">
+<input type=button value="expand last (details)" onclick="javascript:doexpandlast(true);"><br>
+<input type=button value="clear" onclick="javascript:doclear();"><br>
+↓<br>
+<input type=button value="expand all" onclick="javascript:doexpand(false);">
+<input type=button value="expand all (details)" onclick="javascript:doexpand(true);">
+ with bracket <input id=bracket type=input value="2" onchange='javascript:redraw();'/><br>
+<input type=button value="just parse" onclick="javascript:doparse();"><br>
+↓<br>
+output:<br>
+<textarea style="width:100%"rows=10 id="out"></textarea><br>
+</form>
+You can try functions directly by press shift+ctrl+j.
+</p>
+<address>
+<u>MVEBH: Multiple Variable Extended Buchholz Hydra in JavaScript version 1.1</u><br>
+<a href="https://googology.fandom.com/wiki/User:Koteitan">koteitan</a>, <a href="https://googology.fandom.com/wiki/User_blog:Koteitan/Hydra_Diagram_for_Multiple_Variable_Extended_Buchholz%27s_Psi_and_the_expansion_rule">"Hydra Diagram for Multiple Variable Extended Buchholz's Psi and the expansion rule"</a>, <a href="https://googology.fandom.com/wiki/Googology_Wiki">Googology Wiki User Blog</a>, Feb. 21, 2022.<br>
+programmed by <a href="https://twitter.com/koteitan">koteitan</a><br>
+Source code is on <a href="https://github.com/koteitan/ordex/">github</a><br>
+The program and the site is licensed by <a href="https://github.com/koteitan/mvebh/blob/master/LICENSE.md">CC-BY-SA 3.0</a>.
+</address>
+<script type="text/javascript" src="./exarray.js"></script>
+<script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
